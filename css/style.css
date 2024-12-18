@@ -1,0 +1,360 @@
+:root { 
+    --mavi: #2096da;
+    --boz: #777;
+}
+header {
+    background: #1a1a1a;
+    border-bottom: 5px solid var(--mavi);
+    padding: 0 40px;
+}
+nav{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 'logo' 'menu' 'cntc';
+    text-align: center;
+}
+#logo{
+    grid-area: logo;
+    background: var(--mavi);
+    padding: 30px 0;
+}
+#contact{
+    grid-area: cntc;
+    color: var(--boz);
+    padding: 10px 20px;
+    align-items: center;
+    gap: 20px;
+}
+#phone { 
+    display: block;
+    font: .8em 'Museo Sans';
+}
+menu { grid-area: menu;}
+menu li { padding: 5px 12px;}
+menu li a {
+    font: 1.2em 'Caviar Dreams';
+    text-transform: uppercase;
+    color: #fff;
+    padding: 6px 10px;
+}
+#icons a {
+    display: inline-grid;
+    justify-content: center;
+    align-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #2c2c2c;
+    font-size: .9em;
+}
+main {
+    background: url('../img/mainbg.jpg');
+}
+#articles {
+    display: grid;
+    gap: 1em;
+    grid-template-rows:  50vh 50vh 100vh 50vh 50vh
+                         50vh 50vh 50vh 50vh 50vh
+                        100vh 50vh 50vh 50vh 50vh 50vh;
+}
+#a02 { background: url('../img/art02.jpg') center/cover }
+#a03 { background: url('../img/art03.jpg') center/cover }
+#a04 { background: url('../img/art04.jpg') center/cover }
+#a05 { background: url('../img/art05.jpg') center/cover }
+#a06 { background: url('../img/art06.jpg') center/cover }
+#a07 { background: url('../img/art07.jpg') center/cover }
+#a08 { background: url('../img/art08.jpg') center/cover }
+#a09 { background: url('../img/art09.jpg') center/cover }
+#a10 { background: url('../img/art10.jpg') center/cover }
+#a11 { background: url('../img/art11.jpg') center/cover }
+#a12 { background: url('../img/art12.jpg') center/cover }
+#a13 { background: url('../img/art13.jpg') center/cover }
+#a14 { background: url('../img/art14.jpg') center/cover }
+#a15 { background: url('../img/art15.jpg') center/cover }
+#a16 { background: url('../img/art16.jpg') center/cover }
+
+.quotes{
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+}
+.quotes p{
+    color: var(--boz);
+    font: italic 1.5em "Georgia";
+    line-height: 30px;
+    text-align: center;
+    padding: 0 10px ;
+}
+.quote{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 55px auto 55px;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer {
+    background: #1a1a1a;
+    position: relative;
+    padding-top: 20px;
+}
+.icons{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto auto ;
+    justify-content: space-evenly;
+    gap: 20px;
+    text-align: center;
+    padding: 0 10px;
+}
+.icons i{
+    background: #202022e8;
+    box-shadow: 0 3px #04040470; 
+    border-radius: 50%;
+    font-size: 1.5em;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    color: #777;
+}
+.footerpart{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.heading{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 20% auto 20%;
+    padding: 30px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.heading p{
+    font:400 1.1em "Caviar Dreams";
+    color: #c5c5c5;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.ftrimg{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    padding: 2px;
+}
+.ftrimg img{
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    background-color: #262626;
+    transition: .4s;
+}
+
+article i{ color: #777;}
+article{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+}
+article img{
+    width: 80px;
+    height: 70px;
+    padding: 10px;
+    background-color: #262626;
+    transition: .3s;
+}
+.artimg{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+    transition: .3s;
+    padding: 2px;
+}
+h5{
+    font: .9em 'Museo Sans';
+    line-height: 20px;
+    color: #c5c5c5;
+}
+h6{
+    font: .6em 'Museo Sans';
+    color: #777;
+    text-transform: uppercase;
+}
+.comment{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    gap: 5px;
+    align-items: center;
+    padding: 10px 0;
+}
+.inputs{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 210px;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    padding: 2px;
+}
+.inputs input{
+    background: #262626;
+    border: none;
+    padding: 5px 10px;
+}
+input::placeholder{ color: #c5c5c5;}
+#subs{ 
+    color: #c5c5c5;
+    transition: .4s;
+}
+.bgmavi{
+    background-color: var(--mavi);
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font: .9em 'Museo Sans';
+    text-align: right;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .container { 
+        max-width: 960px;
+        margin: auto
+    }
+    nav { 
+        grid-template-rows: 64px 30px;
+        grid-template-columns: 130px auto;
+        grid-template-areas: 'logo cntc' 
+                             'logo menu';
+    }
+    #contact { 
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: end;
+    }
+    menu { 
+        display: grid; 
+        justify-content: end;
+        grid-template-columns: auto auto auto auto auto;
+    }
+    main{padding-bottom:60px;}
+    menu li a.active, menu li a:hover { background: var(--mavi) }
+    #articles {
+        justify-content: center;
+        grid-template-rows: 220px 220px 220px 220px 220px;
+        grid-template-columns: 25% 25% 25% 25%;
+        padding: 20px 50px;
+    }
+    #articles .pic { opacity: .5; }
+    #articles .pic:hover { opacity: 1; }
+    #a03 { grid-area: 1 / 3 / span 2 / span 1;}
+    #a10 { grid-area: 3 / 3 / span 1 / span 2;}
+    #a11 { grid-area: 4 / 1 / span 2 / span 1;}
+    #a16 { grid-area: 5 / 3 / span 1 / span 2;}
+    .icons{
+        grid-template-rows: auto;
+        grid-template-columns: auto auto auto auto auto auto auto ;
+        gap: 30px;
+        position: absolute;
+        top:-45px;
+        left:50%;
+        transform: translate(-50%, 0);
+    }
+    .icons i{
+        font-size: 2.4em;
+        width: 80px;
+        height: 80px;
+        transition: .3s;
+    }
+    .icons i:hover{
+        background-color: #777;
+        color: #202022e8;
+        scale: 1.1;
+    }
+    #subs:hover{
+        background-color: #c5c5c5;
+        color: #262626;
+    }
+    .ftrimg img:hover{scale: 1.3;}
+    .artimg:hover{background-color: #77777741;}
+    .footerparts{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: auto;
+        align-items: start;
+        justify-content: center;
+        gap: 30px;
+        padding: 20px 10px ;
+    }
+    .inputs input{
+        background: #262626;
+        border: none;
+        padding: 5px 10px;
+        width: 120%;
+    }
+    #subs{ 
+        width: 120%;
+        color: #c5c5c5;
+        transition: .4s;
+    }
+    .ftrimg img{
+        width: 80px;
+        height: 70px;
+        padding: 10px;
+        background-color: #262626;
+        transition: .4s;
+    }
+    .artimg img{
+        width: 90px;
+        height: 90px;
+    }
+    .artimg{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto;
+        align-items: start;
+        justify-content: start;
+    }
+    .heading{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 50px auto 50px;
+    }
+    .bgmavi{
+        grid-template-rows: auto;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 10px;
+        gap: 20%;
+    }
+
+
+}
